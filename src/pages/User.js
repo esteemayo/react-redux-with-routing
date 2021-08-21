@@ -24,7 +24,7 @@ const User = () => {
     const fetchUser = useCallback(async () => {
         try {
             const { data: { data } } = await getUser(id);
-            setUser(data)
+            setUser(data);
         } catch (err) {
             console.error(err);
         }

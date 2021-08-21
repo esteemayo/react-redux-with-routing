@@ -6,7 +6,6 @@ import { getUsers } from '../services/userService';
 import UserLists from '../components/UserLists';;
 
 const Home = () => {
-
     const actionDispatcher = (dispatch) => ({
         setUser: (users) => dispatch(setUsers(users)),
     });
